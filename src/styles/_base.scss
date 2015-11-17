@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * base
+ *
+------------------------------------- */
+
+
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  color: $base-font-color;
+}
+a {
+  color: $base-link-color;
+  text-decoration: none;
+}
+a:hover {
+  color: $base-link-color;
+}
+
+label {
+  cursor: pointer;
+}
+img {
+  vertical-align: middle;
+}

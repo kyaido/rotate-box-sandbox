@@ -1,0 +1,15 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "csswring": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

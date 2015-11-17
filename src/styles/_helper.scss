@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * helper
+ *
+------------------------------------- */
+
+
+/* text decolation */
+.textNormal      { font-weight: normal !important; }
+.textBold        { font-weight: bold !important; }
+.textUnderline   { text-decoration: underline !important; }
+.textNoUnderline { text-decoration: none !important; }
+.textItalic      { font-style: italic !important; }
+.textNowrap      { white-space: nowrap !important; }
+.textNote        { padding-left: 1em; text-indent: -1em; }
+
+
+/* text align */
+.alignLeft   { text-align: left !important; }
+.alignCenter { text-align: center !important; }
+.alignRight  { text-align: right !important; }
+.alignTop    { vertical-align: top !important; }
+.alignMiddle { vertical-align: middle !important; }
+.alignBottom { vertical-align: bottom !important; }
+
+
+/* font-size */
+@for $i from 10 through 20 {
+  .fs#{$i} {
+    font-size: 1px * $i !important;
+  }
+}
+
+
+/* margin top */
+@for $i from 0 through 10 {
+  .mt#{$i * 5} {
+    @if $i == 0 {
+      margin-top: 0 !important;
+    }
+    @else {
+      margin-top: 5px * $i !important;
+    }
+  }
+}
+
+
+/* clearfix */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
